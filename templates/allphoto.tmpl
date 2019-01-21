@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+    {% for image in images  %}
+        <div class='gallery'>
+            <a href='single-photo.php/?image_id={{ image.image_id }}'>
+                <img width='70' src='images/{{ image.image_name }}'>
+            </a>
+        </div>
+    {% endfor %}
+
+    </body>
+</html>
